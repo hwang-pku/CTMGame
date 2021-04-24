@@ -1,3 +1,9 @@
 #include "Chunk.h"
 
-Chunk::Chunk(int address, std::string & gist, double weight, double intensity, double mood):address(address), gist(gist), weight(weight), intensity(intensity), mood(mood){}
+Chunk::Chunk(int address, std::string & gist, double weight, double mood):address(address), gist(gist), weight(weight), mood(mood){}
+bool Chunk::operator<(const Chunk & tmp)const{
+    return intensity()<tmp.intensity();
+}
+const double Chunk::intensity()const{
+    return weight;//this may want some modification
+}
