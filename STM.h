@@ -6,5 +6,5 @@ class STM{
     public:
         std::vector<LTM> longTermMemories;
         LTM upTree();
-        void BroadCast();
+        void broadCast(const Chunk &);
 };

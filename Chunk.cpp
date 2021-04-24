@@ -4,6 +4,3 @@ Chunk::Chunk(int address, std::string & gist, double weight, double mood):addres
 bool Chunk::operator<(const Chunk & tmp)const{
     return intensity()<tmp.intensity();
 }
-const double Chunk::intensity()const{
-    return weight;//this may want some modification
-}

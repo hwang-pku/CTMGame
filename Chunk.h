@@ -5,8 +5,8 @@ class Chunk{
         int address=0;
         std::string gist;
         double weight;
-        const double intensity()const;
+        const double intensity()const{return weight;};
         double mood;
-        Chunk(int, std::string &, double, double, double);
+        Chunk(int, std::string &, double, double);
         bool operator<(const Chunk &)const;
 };
