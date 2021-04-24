@@ -1,9 +1,9 @@
-#include <string>
+#include <iostream>
 
 class Chunk{
     public:
         int address=0;
-        string gist;
+        std::string gist;
         double weight;
         double intensity;
         double mood;
