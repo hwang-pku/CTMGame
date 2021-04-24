@@ -1,7 +1,10 @@
 #include "LTM.h"
 #include "Chunk.h"
+#include <vector>
 
 class STM{
-    private:
-        
+    public:
+        std::vector<LTM> longTermMemories;
+        LTM upTree();
+        void BroadCast();
 };

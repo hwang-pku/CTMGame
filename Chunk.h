@@ -7,4 +7,5 @@ class Chunk{
         double weight;
         double intensity;
         double mood;
+        Chunk(int, std::string &, double, double, double);
 };
